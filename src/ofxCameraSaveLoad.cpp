@@ -102,10 +102,10 @@ bool ofxSaveCamera(ofEasyCam & cam, string savePath){
         buffer.append("drag\n" + ofToString(cam.getDrag())+"\n");
         buffer.append("doTranslationKey\n" + ofToString(cam.getTranslationKey())+"\n");
          if(ofBufferToFile(savePath, buffer)){
-            ofLogNotice("ofEasyCam saved successfully!");
+            //ofLogNotice("ofEasyCam saved successfully!");
             return true;
         }else{
-            ofLogWarning("failed to save ofEasyCam!");
+            //ofLogWarning("failed to save ofEasyCam!");
             return false;
         }
     }else{
